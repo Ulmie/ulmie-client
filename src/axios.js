@@ -7,7 +7,7 @@ import axios from "axios";
 // })
 
 export const makeRequest = axios.create({
-  baseURL: "ulmie-api-production.up.railway.app/api/",
+  baseURL: "https://ulmie-api-production.up.railway.app/api/",
   withCredentials: true,
 
 })
