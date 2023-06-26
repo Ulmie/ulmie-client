@@ -18,7 +18,7 @@ export const AuthContextProvider = ({ children }) => {
   // };
 
   const login = async (inputs) => {
-    const res = await axios.post("http://localhost:5000/api/auth/login", inputs, {
+    const res = await axios.post("https://ulmie-api-production.up.railway.app/api/auth/login", inputs, {
       withCredentials: true,
     });
 
@@ -36,7 +36,7 @@ export const AuthContextProvider = ({ children }) => {
   // };
 
   const logout = async () => {
-    await axios.post("http://localhost:5000/api/auth/logout", {
+    await axios.post("https://ulmie-api-production.up.railway.app/api/auth/logout", {
       withCredentials: true,
     });
 
