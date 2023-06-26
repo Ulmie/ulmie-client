@@ -1,0 +1,55 @@
+@import "../../style.scss";
+
+.followers{
+
+
+  @include themify($themes) {
+    padding: 20px 70px;
+    background-color: themed("bgSoft");
+    h1 {
+      color: themed('textColor');
+    }
+    .container {
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 20px;
+        background-color: themed('bg');
+        border-radius: 20px;
+        margin-bottom: 20px;
+  
+        .left {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+    
+          span {
+            font-size: 18px;
+            font-weight: 600;
+            color: themed('textColor');
+          }
+        }
+        .right {
+          
+        }
+      }
+    }
+    
+    @include mobile {
+      padding: 10px;
+    }
+    
+    @include tablet{
+      padding: 20px;
+    }
+  }
+}
+
