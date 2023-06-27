@@ -23,7 +23,7 @@ const Register = () => {
     try {
       await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth/register`, inputs)
     } catch(err) {
-      setErr(err.response.data);
+      setErr(err);
     }
   }
 
