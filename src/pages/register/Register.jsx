@@ -40,7 +40,7 @@ const Register = () => {
             <input type="email" placeholder="Электронная почта" name="email" onChange={handleChange} />
             <input type="password" placeholder="Пароль" name="password" onChange={handleChange} />
             <input type="text" placeholder="Имя" name="name" onChange={handleChange} />
-            {err && err}
+            {err && <p>{err}</p>}
             <div className="btns">
               <button onClick={handleClick}>Регистрация</button>
               <div className="bottom">
